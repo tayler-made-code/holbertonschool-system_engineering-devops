@@ -1,0 +1,1 @@
+for i in {1..13}; do cp original.txt copy$i.txt; done
