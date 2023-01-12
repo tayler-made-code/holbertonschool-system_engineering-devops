@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo -n "Please enter the path of the target file: "
+read target_file_path
+
+echo -n "Please enter the name of the target file: "
+read target_file_name
+
+target_file="$target_file_path/$target_file_name"
+
+echo -n "How many copies of the file do you need? (Up to 99) "
+read num_copies
+
+if [ $num_copies -gt 99 ]
+then
+	echo "Error: Maximum number of copies is 99."
+	exit 1
+fi
+	echo -n "Enter naming style for the copied files(cp01, cp02, etc): "
+	read naming_style
+	for ((i=1; i<=num_copies; i++))
+	do
+		printf -v j "%02d" $i
+		cp "$target_file" "$naming_style$j"
+	done
+
+echo "All Done!"
