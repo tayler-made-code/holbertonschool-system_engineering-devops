@@ -1,2 +1,2 @@
 #!/bin/bash
-echo /etc/ssh/sshd_config | uniq -i
+ls -la /etc/passwd | sort -f --sort=WORD
