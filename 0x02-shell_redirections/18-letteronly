@@ -1,2 +1,2 @@
 #!/bin/bash
-echo /etc/passwd | sort -f
+grep -v /etc/passwd | sort -f
