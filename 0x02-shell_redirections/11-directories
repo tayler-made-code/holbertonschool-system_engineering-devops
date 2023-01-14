@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa | find -type d
+ls -lRa | grep ^d | uniq -c | wc -l
