@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aR | grep -c ^d
+ls -laR | grep ^d | wc -l
