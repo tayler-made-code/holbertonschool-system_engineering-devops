@@ -1,2 +1,0 @@
-Problem 11
-find ./ -maxdepth 1 -type d | wc -l

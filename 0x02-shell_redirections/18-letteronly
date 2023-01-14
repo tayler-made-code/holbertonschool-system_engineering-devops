@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la /etc/passwd | sort -f --sort=WORD
+ls -la /etc/passwd | sort -f 
