@@ -1,2 +1,2 @@
 #!/bin/bash
-mv | grep ^[A-Z] | /temp/u
+mv /*[A-Z]* /tmp/u
