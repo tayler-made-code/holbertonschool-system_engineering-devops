@@ -1,0 +1,23 @@
+#!/bin/bash
+echo "#!/bin/bash" >> rm_after_done
+	chmod +x rm_after_done
+target_file="./rm_after_done"
+
+echo -n "How many copies of the file do you need? (Up to 99) "
+read num_copies
+
+if [ $num_copies -gt 99 ]
+then
+	echo "Error: Maximum number of copies is 99."
+	exit 1
+fi
+
+for ((i=1; i<=num_copies; i++))
+do
+	echo -n "Enter custom name for copy #$i: "
+	read custom_name
+	cp "$target_file" "$custom_name"
+	done
+
+rm rm_after_done
+echo "All Done!"
