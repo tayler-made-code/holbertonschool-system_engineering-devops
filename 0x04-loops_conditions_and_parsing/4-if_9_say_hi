@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
-# comment line
- 
+# while | if | "Best School" | 10 times, 9 must say message and then Hi on a new line
+n=1
+while [ $n -le 10 ]
+do
+	echo "Best School"
+	
+	if [ $n -eq 9 ]
+	then
+		printf "\nHi"
+		n=$(( n + 1 ))
+	else
+		n=$(( n + 1 ))
+	fi
+done
