@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo -n "Please enter the path of the target file: "
+read target_file_path
+
+echo -n "Please enter the name of the target file: "
+read target_file_name
+
+target_file="$target_file_path/$target_file_name"
+
+echo -n "How many copies of the file do you need? (Up to 99) "
+read num_copies
+
+if [ $num_copies -gt 99 ]
+then
+	echo "Error: Maximum number of copies is 99."
+	exit 1
+fi
+
+for ((i=1; i<=num_copies; i++))
+do
+	echo -n "Enter custom name for copy #$i: "
+	read custom_name
+	cp "$target_file" "$custom_name"
+	done
+
+echo "All Done!"
