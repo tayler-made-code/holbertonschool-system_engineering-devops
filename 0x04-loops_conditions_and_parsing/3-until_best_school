@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 # comment line
- 
+n=1
+until [ $n -e 10 ]
+do
+	echo "Best School"
+	n=$(( n + 1))
+done
