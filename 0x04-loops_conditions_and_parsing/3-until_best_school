@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # comment line
 n=1
-until [ $n -ge 10 ]
+until [ $n -ge 11 ]
 do
 	echo "Best School"
 	n=$(( n + 1))
