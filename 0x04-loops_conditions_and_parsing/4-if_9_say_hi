@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# while | if | "Best School" | 10 times, 9 must say message and then Hi on a new line
+# This script will display the desired message but on the 9th time it will display an additional message. After 11 messages the script will stop.
 n=1
 while [ $n -le 10 ]
 do
