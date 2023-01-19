@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | tr "oo"
+printf {a..z}{a..z} | tr "oo"
