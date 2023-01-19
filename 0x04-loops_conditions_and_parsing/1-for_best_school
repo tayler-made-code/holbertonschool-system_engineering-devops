@@ -1,2 +1,6 @@
 #!/bin/bash
-echo "Best School" for 10
+#
+for i in {1..10}
+do
+	echo "Best School"
+done
