@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/binusr/bin/env bashh
 # this script first solves for i which is 1 through 10 and then displays the message that many times.
 for i in {1..10}
 do
