@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$NUM"."$((($NUM * 100) % 100))
+printf $NUM
