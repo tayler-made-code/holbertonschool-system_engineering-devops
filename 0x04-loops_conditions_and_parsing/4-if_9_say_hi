@@ -7,7 +7,7 @@ do
 	
 	if [ $n -eq 9 ]
 	then
-		printf "\nHi"
+		printf "Hi\n"
 		n=$(( n + 1 ))
 	else
 		n=$(( n + 1 ))
