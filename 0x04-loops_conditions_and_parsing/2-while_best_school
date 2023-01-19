@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# comment line
+# this script checks to see if the number is less than or equal to 10, if it is it will display the message.
 x=1
 while [ $x -le 10 ]
 do
