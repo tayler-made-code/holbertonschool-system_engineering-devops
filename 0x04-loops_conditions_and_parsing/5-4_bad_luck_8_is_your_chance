@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
-# comment line
- 
+# while | if | elif | else | this script displays 10 messages, 8 of the messages will be "Best School" the 4th message will display "bad luck" and the 8th message will display "good luck"
+y=0
+while [ $y -le 9 ]
+do
+	y=$(( y + 1 ))
+	if [ $y -eq 4 ]; then
+		echo "bad luck"
+	elif [ $y -eq 8 ]; then
+		echo "good luck"
+	else
+		echo Best School
+	fi
+done
