@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # comment line
- 
+x=1
+for (( x=1; x<=2; x++ ))
+do
+        echo 'ls -l' | tr '*-'
+done

@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "#!/bin/bash" >> rm_after_done
+echo "what is the shebang format?"
+read shebang
+echo "$shebang" >> rm_after_done
 	chmod +x rm_after_done
 target_file="./rm_after_done"
 
