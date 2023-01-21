@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# while | display every minute between 1 and 59 | display hours from 0 to 12
+# this script checks the hour and then if it is less than or equal to 12 it prints the hour, while that is happening it will print the minute as long as it is less than 59. 
 hour=0
-minute=0
+minute=1
 while [ $hour -le 12 ]
 do
 	printf "%s\n" "Hour: $hour"
