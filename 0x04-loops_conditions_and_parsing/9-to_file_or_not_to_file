@@ -1,3 +1,24 @@
 #!/usr/bin/env bash
 # comment line
- 
+#if the file is a regular file: school is a regular file
+#if the file is not a regular file: (nothing)
+
+F=./school
+if [ ! -f "$F" ] && [ ! -d "$F" ]; then
+	echo "school file does not exist"
+	exit 1
+elif
+	[ -s "$F" ]; then
+	printf "school file exists\nschool file is not empty\n"
+elif
+	[ ! -s "$F" ]; then
+	printf "school file exists\nschool file is empty\n"
+else
+	printf ""
+fi
+
+if [ -f "$F" ]; then
+	printf "school is a regular file\n"
+else
+	printf ""
+fi
