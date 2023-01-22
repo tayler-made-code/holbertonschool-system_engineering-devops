@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # this script will show all processes
-processes=$(pstree -A -u)
-echo "$processes"
+ps -aux
