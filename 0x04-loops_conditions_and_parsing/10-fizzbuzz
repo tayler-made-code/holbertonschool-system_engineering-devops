@@ -1,3 +1,18 @@
 #!/usr/bin/env bash
-# comment line
- 
+# this script will check to see if the remainder of division by 3 & 5 are both 0 at the same time, if so it will print FizzBuzz. If only one number has a remainder of 0 only half of the word is printed.
+x=1
+while [ $x -le 100 ]
+do
+	by3=$(( x % 3 ))
+	by5=$(( x % 5 ))
+	if [ $by3 -eq 0 ] && [ $by5 -eq 0 ]; then
+		echo "FizzBuzz"
+	elif [ $by3 -eq 0 ] && [ $by5 -ne 0 ]; then
+		echo "Fizz"
+	elif [ $by3 -ne 0 ] && [ $by5 -eq 0 ]; then
+		echo "Buzz"
+	else
+		echo "$x"
+	fi
+	x=$(( x + 1 ))
+done
