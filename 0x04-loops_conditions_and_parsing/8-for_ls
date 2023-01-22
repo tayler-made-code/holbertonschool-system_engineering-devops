@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # comment line
-x=1
-for (( x=1; x<=2; x++ ))
+for file in ./*
 do
-        echo 'ls -l' | tr '*-'
+        echo "$file" | cut -f2- -d '-'
 done
