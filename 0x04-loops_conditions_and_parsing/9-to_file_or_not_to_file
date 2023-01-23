@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# comment line
-#if the file is a regular file: school is a regular file
-#if the file is not a regular file: (nothing)
+# this script first checks to see if the file does not exist and is not a directory. if both are true it displays that the file does not exist and exits the script. Then if the file exists and has content the script will say so, and then if it is a regular file it will display that as well.
 
 F=./school
 if [ ! -f "$F" ] && [ ! -d "$F" ]; then
