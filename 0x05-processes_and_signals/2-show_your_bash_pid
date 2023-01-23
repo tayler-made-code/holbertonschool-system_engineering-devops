@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# comment line
 # shellcheck disable=SC2009
-ps aux | grep -w "bash" | grep -v "grep" | awk '{print $2}'
+ps -aux --forest | grep bash
