@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # this script kills the 4-to_infinity_and_beyond
-kill -9 04-to_infinty_and_beyond
+buzz=(pidof 4-to_infinity_and_beyond)
+kill "$buzz"
